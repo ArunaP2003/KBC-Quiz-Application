@@ -1,0 +1,24 @@
+CREATE DATABASE quizdb;
+USE quizdb;
+
+CREATE TABLE questions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    question VARCHAR(255),
+    optionA VARCHAR(100),
+    optionB VARCHAR(100),
+    optionC VARCHAR(100),
+    optionD VARCHAR(100),
+    correctOption CHAR(1)
+);
+
+INSERT INTO questions (question, optionA, optionB, optionC, optionD, correctOption) VALUES
+('What is the capital of India?', 'Mumbai', 'New Delhi', 'Kolkata', 'Chennai', 'B'),
+('Who wrote the national anthem of India?', 'Rabindranath Tagore', 'Mahatma Gandhi', 'Bankim Chandra Chatterjee', 'Subhash Chandra Bose', 'A'),
+('Which planet is known as the Red Planet?', 'Venus', 'Earth', 'Mars', 'Jupiter', 'C'),
+('What is 5 + 3?', '5', '8', '7', '10', 'B'),
+('Who painted the Mona Lisa?', 'Van Gogh', 'Leonardo da Vinci', 'Picasso', 'Michelangelo', 'B'),
+('Which gas do plants absorb?', 'Oxygen', 'Nitrogen', 'Carbon Dioxide', 'Helium', 'C'),
+('How many continents are there?', '5', '6', '7', '8', 'C'),
+('Which is the largest ocean?', 'Atlantic', 'Indian', 'Arctic', 'Pacific', 'D'),
+('Who invented the light bulb?', 'Edison', 'Newton', 'Einstein', 'Tesla', 'A'),
+('Which animal is known as the ship of the desert?', 'Camel', 'Horse', 'Elephant', 'Donkey', 'A');
